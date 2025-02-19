@@ -6,7 +6,6 @@ from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
 from tqdm import tqdm
-from data_reader import read_general
 import re
 
 def extract_answer(s):
