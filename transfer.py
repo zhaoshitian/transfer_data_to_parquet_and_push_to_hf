@@ -62,8 +62,7 @@ def process_item(item, image_dir_path):
         
         # 读取图像并转换为 RGB 格式
         image_path = item['image_path']
-        image = read_general(image_path)
-        image = Image.open(image).convert('RGB')
+        image = Image.open(image_path).convert('RGB')
         width, height = image.size
 
         extract_gt_0 = extract_gt[0]
